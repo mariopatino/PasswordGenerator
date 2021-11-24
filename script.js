@@ -80,11 +80,17 @@ function generatePassword(){
   var sourcePassword = [];
   var newPassword = "";
   var lenghtPassword=askForPasswdLngt();
+
+  if (lenghtPassword !== 0){
+    sourcePassword = sourcePassword.concat(askForNumbers());
+    sourcePassword = sourcePassword.concat(askForLowerCase());
+    sourcePassword = sourcePassword.concat(askForUpperCase());
+    sourcePassword = sourcePassword.concat(askForSymbols());
+  } else {
+     alert("Thanks for your visit");
+  }
   
-  sourcePassword = sourcePassword.concat(askForNumbers());
-  sourcePassword = sourcePassword.concat(askForLowerCase());
-  sourcePassword = sourcePassword.concat(askForUpperCase());
-  sourcePassword = sourcePassword.concat(askForSymbols());
+
   
 for(var i=0; i < lenghtPassword; i++){
   var j = randomIndex(sourcePassword.length);
