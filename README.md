@@ -1,1 +1,1 @@
-# PasswordGenerator with leght of password and basic rules
+# PasswordGenerator asking for lenght of password and basic rules like if you want to use number, upper case or lower case letter and simbols. The minimun lenght is 8 and the maximum is 25 characters long.
